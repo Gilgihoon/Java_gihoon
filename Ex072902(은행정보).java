@@ -1,4 +1,4 @@
-import java.util.Scanner; //ÀÚ·á°ªÀ» ÀÐ¾îµéÀÏ¶§ ÇÊ¿ä (¸ðµâ)
+import java.util.Scanner; //ìžë£Œê°’ì„ ì½ì–´ë“¤ì¼ë•Œ í•„ìš” (ëª¨ë“ˆ)
 
 public class Ex072902 {
 
@@ -8,30 +8,30 @@ public class Ex072902 {
 		
 		int balance = 0;
 		
-		Scanner scanner = new Scanner(System.in); //»ç¿ëÇÒ ¸ðµâÀ» »õ·Ó°Ô Á¤ÀÇÇÏ´Â°Í
-		while(run) { //¹Ýº¹¹®
+		Scanner scanner = new Scanner(System.in); //ì‚¬ìš©í•  ëª¨ë“ˆì„ ìƒˆë¡­ê²Œ ì •ì˜í•˜ëŠ”ê²ƒ
+		while(run) { //ë°˜ë³µë¬¸
 			System.out.println("------------------------------");
-			System.out.println("1.¿¹±Ý | 2.Ãâ±Ý | 3. ÀÜ°í | 4.Á¾·á");
+			System.out.println("1.ì˜ˆê¸ˆ | 2.ì¶œê¸ˆ | 3. ìž”ê³  | 4.ì¢…ë£Œ");
 			System.out.println("------------------------------");
-			System.out.print("¼±ÅÃ> ");
+			System.out.print("ì„ íƒ> ");
 
 			int number = scanner.nextInt();
 			int money = 0;
 			
-			switch (number) { //if, else if·Î º¯°æ °¡´É (±× °æ¿ì ÇÏ´Ü case ºÒÇÊ¿ä)
+			switch (number) { //if, else ifë¡œ ë³€ê²½ ê°€ëŠ¥ (ê·¸ ê²½ìš° í•˜ë‹¨ case ë¶ˆí•„ìš”)
 			if (money = scanner.nextInt());
 			balance += money;
 			break;
-			System.out.print("¿¹±Ý¾×>");
+			System.out.print("ì˜ˆê¸ˆì•¡>");
 	
-			if System.out.print("Ãâ±Ý¾×>");
+			if System.out.print("ì¶œê¸ˆì•¡>");
 			money = scanner.nextInt();
 			balance -= money;
 			break;
-			System.out.print("Ãâ±Ý¾×>");
+			System.out.print("ì¶œê¸ˆì•¡>");
 			
 		case 3:
-			System.out.println("ÀÜ°í>" + balance);
+			System.out.println("ìž”ê³ >" + balance);
 			break;
 		case 4:
 			run = false;
@@ -40,7 +40,7 @@ public class Ex072902 {
 			}
 					
 		}		
-		System.out.println("ÇÁ·Î±×·¥ Á¾·á");
+		System.out.println("í”„ë¡œê·¸ëž¨ ì¢…ë£Œ");
 		scanner.close();
 	}
 }
